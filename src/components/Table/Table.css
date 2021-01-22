@@ -24,12 +24,3 @@ thead {
   background-color: rgb(220, 240, 240);
   border-radius: 15px;
 }
-
-input {
-  margin: 20px;
-  width: 65%;
-  font-size: 24px;
-  border-radius: 15px;
-  padding: 20px;
-  font-family: "Patrick Hand", cursive;
-}
