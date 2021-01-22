@@ -66,6 +66,14 @@ class Table extends Component {
               onChange={this.handleInputChange}
               type="text"
               placeholder="search names"
+              style={{
+                margin: "20px",
+                width: "65%",
+                fontSize: "24px",
+                borderRadius: "15px",
+                padding: "20px",
+                fontFamily: "'Patrick Hand', cursive",
+              }}
             />
             <table className="table">
               <thead>
