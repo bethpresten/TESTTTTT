@@ -29,6 +29,20 @@ class Table extends Component {
       });
   };
 
+  handleInputChange = (event) => {
+    // Getting the value and name of the input which triggered the change
+    const { name, value } = event.target;
+
+    const filteredEmployees = this.state.employees.filter((employee) => {
+      return employee.name.last.includes(value);
+    });
+
+    this.setState({
+      [name]: value,
+      filteredEmployees: filteredEmployees,
+    });
+  };
+
   handleButtonClick = () => {
     // console.log("clicked button");
     const sortedEmployees = this.state.filteredEmployees.sort((a, b) => {
@@ -45,6 +59,13 @@ class Table extends Component {
       <div className="container-fluid">
         <div className="row">
           <div className="col-sm-12">
+            <input
+              value={this.state.search}
+              name="search"
+              onChange={this.handleInputChange}
+              type="text"
+              placeholder="search names"
+            />
             <table className="table">
               <thead>
                 <tr>
