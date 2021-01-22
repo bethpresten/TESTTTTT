@@ -8,6 +8,7 @@ class Table extends Component {
     filteredEmployees: [],
     search: "",
   };
+
   componentDidMount() {
     this.getEmployees();
   }
