@@ -6,12 +6,17 @@
 
 Application that allows for ease of access for a user/employee directory. Utilizes React.js and Axios.
 
+- [Deployed Link](#deployedLink)
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
 - [Contributions](#contributions)
 - [Tests](#test)
 - [Questions](#questions)
+
+## Deployed Link:
+
+https://bethpresten.github.io/TESTTTTT/
 
 ## Installation
 

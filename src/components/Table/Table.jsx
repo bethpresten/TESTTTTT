@@ -55,6 +55,19 @@ class Table extends Component {
     });
   };
 
+  handleButtonClickOpposite = () => {
+    // console.log("clicked button");
+    const sortedEmployeesOpposite = this.state.filteredEmployees.sort(
+      (a, b) => {
+        return a.nat > b.nat ? -1 : 1;
+      }
+    );
+    // console.log(sortedEmployees);
+    this.setState({
+      employees: sortedEmployeesOpposite,
+    });
+  };
+
   render() {
     return (
       <div className="container-fluid">
@@ -100,6 +113,9 @@ class Table extends Component {
                   <th scope="col">
                     <h2>
                       Country
+                      <button onClick={this.handleButtonClickOpposite}>
+                        <i className="fas fa-caret-up"></i>
+                      </button>
                       <button onClick={this.handleButtonClick}>
                         <i className="fas fa-caret-down"></i>
                       </button>
