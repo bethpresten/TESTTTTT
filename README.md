@@ -1,4 +1,4 @@
-# Track-Finder-App
+# React-Employee-Directory
 
 ![license badge](https://img.shields.io/badge/license-MIT-brightgreen)
 
